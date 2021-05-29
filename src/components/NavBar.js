@@ -1,27 +1,24 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import {Navbar, Nav, Container, Row} from 'react-bootstrap';
 import logo from "../img/logo-ecommerce.png";
 
 export default function NavBar() {
   return (
-    <div className="fixed-top">
-      <Container>
+    <div className="fixed-top container-navbar">
+      <Container fluid className="px-lg-5 px-md-3">
         <Navbar
           collapseOnSelect
           expand="null"
           bg="transparent"
           variant="light"
-          className="navbar-w-100 py-4"
+          className="navbar-w-100 py-2 px-lg-5 px-md-3"
         >
-          <Navbar.Brand href="#home">
-            <img src={logo} fluid alt="Logo" />
+          <Navbar.Brand href="#home" className="pl-5">
+            <img src={logo} className="img-fluid" alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="border-0"
+            className="border-0 mr-5 text-white"
           />
           <Navbar.Collapse id="responsive-navbar-nav" className="bg-secondary">
             <Nav>
