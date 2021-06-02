@@ -1,18 +1,26 @@
 $primary: #7eae00;
 
-.container-main{
+.container-main {
     background-image: url(../../img/img2.jpg);
     height: 100vh;
     background-size: cover;
-    &-texts{
-        h1{
-            font-size: 4rem;
-        }
+
+    @media (max-width: 991.98px) {
+        background-position: top right;
     }
-    &-button{
-        .btn-primary{
-            border-radius: 50rem;
-            padding: 15px 25px;
+
+    &-all {
+        @media (max-width: 991.98px) {
+            background-color: rgba($secondary, 0.8);
+            padding-left: 2rem;
+        }
+        &-texts {
+            h1 {
+                font-size: 4rem;
+                @media (max-width: 575.98px) {
+                    font-size: 2.8rem;
+                }
+            }
         }
     }
 }
