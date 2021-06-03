@@ -1,10 +1,11 @@
-$theme-colors: (
-"primary": #7eae00,
-"secondary": #eeeeee
-);
+$theme-colors: ("primary": #7eae00,
+    "secondary": #eeeeee);
 
 @import "fonts/fonts";
 @import "~bootstrap/scss/bootstrap";
 @import "components/navbar";
 @import "components/sliderFullWidth";
+@import "components/cardContainerMain";
 @import "components/buttons/buttonPrincipal.scss";
+@import "components/buttons/buttonCard.scss";
+@import "components/cards/cardCategory.scss";

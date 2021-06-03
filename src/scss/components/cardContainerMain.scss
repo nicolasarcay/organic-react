@@ -1,0 +1,16 @@
+.bg-card {
+    height: 300px;
+    
+
+    &-fruit {
+        background-image: url(../../img/img3.jpg);
+    }
+
+    &-vegetable {
+        background-image: url(../../img/img5.jpg);
+    }
+
+    &-conservas {
+        background-image: url(../../img/img4.jpg);
+    }
+}

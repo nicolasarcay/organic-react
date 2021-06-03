@@ -35,15 +35,18 @@ export default function NavBar() {
               <img src={logo} className="img-fluid" alt="Logo" />
             </Navbar.Brand>
           </Col>
+
           <Col xs={4} className="d-flex justify-content-end align-items-center">
             <Navbar.Toggle
               aria-controls="responsive-navbar-nav"
               className="border-0 mr-2"
             />
+
             <Nav className="icon-cart">
               <CartWidget></CartWidget>
             </Nav>
           </Col>
+
           <Navbar.Collapse id="responsive-navbar-nav" className="bg-secondary">
             <Nav>
               <Container className="menu_collapse">
@@ -64,5 +67,6 @@ export default function NavBar() {
         </Navbar>
       </Container>
     </div>
+
   );
 }

@@ -1,19 +1,21 @@
 import React from "react";
-import {Card} from 'react-bootstrap';
-import ButtonPrincipal from "../buttons/ButtonPrincipal";
+import { Card } from "react-bootstrap";
+import ButtonCards from "../buttons/ButtonCards";
 
-export default function SliderFullWidth() {
+export default function SliderFullWidth(props) {
   return (
-    
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="https://picsum.photos/400/300" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+    <Card>
+      <Card.Img variant="top" src={props.productImg} />
+      <Card.Body className="text-center">
+        <Card.Title>{props.productTitle}</Card.Title>
+        <Card.Text>{props.productDescription}</Card.Text>
+        <Card.Text className="d-flex flex-column">
+          <span className="font-weight-bold text-primary h4 mb-0">
+            {props.productPrice}
+          </span>
+          <small className="text-muted">{props.productQuantity}</small>
         </Card.Text>
-        <ButtonPrincipal callToAction="Ver Producto" />
+        <ButtonCards buttonTexts={props.productButton} />
       </Card.Body>
     </Card>
   );
