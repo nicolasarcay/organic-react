@@ -12,6 +12,7 @@ function App() {
       <SliderFullWidth />
       <CardContainerMain />
       <CardContainerProduct />
+      
     </div>
   );
 }

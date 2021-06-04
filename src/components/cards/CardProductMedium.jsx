@@ -1,10 +1,11 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import ButtonCards from "../buttons/ButtonCards";
+import CounterCard from "../counters/CounterCard";
 
 export default function SliderFullWidth(props) {
   return (
-    <Card>
+    <Card className="border-0 justify-content-center align-items-center">
       <Card.Img variant="top" src={props.productImg} />
       <Card.Body className="text-center">
         <Card.Title>{props.productTitle}</Card.Title>
@@ -15,6 +16,7 @@ export default function SliderFullWidth(props) {
           </span>
           <small className="text-muted">{props.productQuantity}</small>
         </Card.Text>
+        <CounterCard />
         <ButtonCards buttonTexts={props.productButton} />
       </Card.Body>
     </Card>

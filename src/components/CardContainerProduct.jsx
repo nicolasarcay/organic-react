@@ -37,8 +37,6 @@ export default function SliderFullWidth() {
             productPrice="$ 95"
             productQuantity="Precio por Kilo"
             productButton="Comprar"
-            productButton="Comprar"
-            productPrice="$ 95"
             productImg={naranjas}
           />
         </Col>
