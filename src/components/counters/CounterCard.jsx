@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 
+const MIN = 1;
+const MAX = 10;
 export default function CounterCard() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(MIN);
   let handleIncrement = () => {
     setCount((prevCount) => prevCount + 1);
   };
-  if(count==10) {
+  if(count==MAX) {
     handleIncrement = () => setCount(count);
   }
   let handleDecrement = () => {
     setCount((prevCount) => prevCount - 1);
   };
-  if(count<=1) {
-    handleDecrement = () => setCount(1);
+  if(count<=MIN) {
+    handleDecrement = () => setCount(MIN);
   }
   return (
     <div>
