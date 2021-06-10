@@ -1,24 +1,36 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import ButtonCards from "../buttons/ButtonCards";
 import CounterCard from "../counters/CounterCard";
+import productos from "../../products.json";
 
-export default function SliderFullWidth(props) {
+export const CardProductMedium = () => {
   return (
-    <Card className="border-0 justify-content-center align-items-center">
-      <Card.Img variant="top" src={props.productImg} />
-      <Card.Body className="text-center">
-        <Card.Title>{props.productTitle}</Card.Title>
-        <Card.Text>{props.productDescription}</Card.Text>
-        <Card.Text className="d-flex flex-column">
-          <span className="font-weight-bold text-primary h4 mb-0">
-            {props.productPrice}
-          </span>
-          <small className="text-muted">{props.productQuantity}</small>
-        </Card.Text>
-        <CounterCard />
-        <ButtonCards buttonTexts={props.productButton} />
-      </Card.Body>
-    </Card>
-  );
+    <>
+    {productos.map((item) =>{
+      return(
+        <>
+      <Col lg={3} md={6} xs={12}>
+      <Card className="border-0 justify-content-center align-items-center">
+        <Card.Img variant="top" src={item.imagen} alt={item.producto} />
+        <Card.Body className="text-center">
+          <Card.Title>{item.producto}</Card.Title>
+          <Card.Text>{item.descripcion}</Card.Text>
+          <Card.Text className="d-flex flex-column">
+            <span className="font-weight-bold text-primary h4 mb-0">
+              {item.precio}
+            </span>
+            <small className="text-muted">{item.leyenda}</small>
+          </Card.Text>
+          <CounterCard max={item.stock}/>
+          <ButtonCards buttonTexts={item.boton} />
+        </Card.Body>
+      </Card>
+    </Col>
+    </>
+      );
+    })}
+    </>
+  )
 }
+export default CardProductMedium

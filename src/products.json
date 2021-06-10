@@ -1,0 +1,38 @@
+[
+    {
+        "producto": "Frutillas",
+        "descripcion": "Frutillas de Rio Negro",
+        "precio": "$ 350",
+        "leyenda": "Precio por Kilo",
+        "boton": "Comprar",
+        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas.jpg",
+        "stock": 8
+    },
+    {
+        "producto": "Platanos",
+        "descripcion": "Organicos de Brasil",
+        "precio": "$ 250",
+        "leyenda": "Precio por Kilo",
+        "boton": "Comprar",
+        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platano.jpg",
+        "stock": 20
+    },
+    {
+        "producto": "Naranjas",
+        "descripcion": "Naranjas de Entre Rios",
+        "precio": "$ 95",
+        "leyenda": "Precio por Kilo",
+        "boton": "Comprar",
+        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/naranjas.jpg",
+        "stock": 9
+    },
+    {
+        "producto": "Uvas",
+        "descripcion": "Uvas de Mendoza",
+        "precio": "$ 150",
+        "leyenda": "Precio por Kilo",
+        "boton": "Comprar",
+        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/uvas.jpg",
+        "stock": 15
+    }
+  ]
