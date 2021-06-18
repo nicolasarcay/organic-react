@@ -17,7 +17,7 @@ function CardMercadolibre() {
       {data !== null ? (
         data.map((data, index) => {
           return (
-            <Col lg={3} md={6} xs={12}>
+            <Col lg={3} md={6} xs={12} key={index}>
               <Card className="border-0 justify-content-center align-items-center h-100">
                 <Card.Img variant="top" src={data.image} alt={data.title} />
                 <Card.Body className="text-center">

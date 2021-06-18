@@ -5,7 +5,7 @@ import ButtonCards from "../buttons/ButtonCards";
 export default function CardCategory(props) {
   return (
     <div className="card-category row justify-content-end align-items-center h-100">
-      <Col lg={7} class="card-category-bg">
+      <Col lg={7} className="card-category-bg">
         <div className="card-category-texts">
           <h4 className="cursive text-primary font-weight-bold">
             {props.cardSubTitle}
