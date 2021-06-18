@@ -1,19 +1,12 @@
 import './App.scss';
-import NavBar from './components/NavBar';
-import SliderFullWidth from './components/SliderFullWidth';
-import CardContainerProduct from './components/CardContainerProduct'
-import CardContainerMain from './components/CardContainerMain'
+import AppRouter from './routers/AppRouter'
 
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <SliderFullWidth />
-      <CardContainerMain />
-      <CardContainerProduct />
-      
+      <AppRouter/>
     </div>
   );
 }

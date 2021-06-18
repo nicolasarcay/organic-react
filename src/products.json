@@ -5,6 +5,7 @@
         "precio": "$ 350",
         "leyenda": "Precio por Kilo",
         "boton": "Comprar",
+        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas.jpg",
         "stock": 8
     },
@@ -14,6 +15,7 @@
         "precio": "$ 250",
         "leyenda": "Precio por Kilo",
         "boton": "Comprar",
+        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platano.jpg",
         "stock": 20
     },
@@ -23,6 +25,7 @@
         "precio": "$ 95",
         "leyenda": "Precio por Kilo",
         "boton": "Comprar",
+        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/naranjas.jpg",
         "stock": 9
     },
@@ -32,6 +35,7 @@
         "precio": "$ 150",
         "leyenda": "Precio por Kilo",
         "boton": "Comprar",
+        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/uvas.jpg",
         "stock": 15
     }

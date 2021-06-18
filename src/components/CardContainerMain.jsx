@@ -16,6 +16,7 @@ export default function CardContainerMain() {
             cardTitle="Citricos"
             cardDescription="Esta estacion esta llena de vitamina C"
             buttonText="Productos"
+            linkProduct="/Category"
           />
         </Col>
         <Col
@@ -28,6 +29,7 @@ export default function CardContainerMain() {
             cardTitle="Otoño"
             cardDescription="El otoño nos regala mucha vida"
             buttonText="Productos"
+            linkProduct="/Category"
           />
         </Col>
         <Col
@@ -40,6 +42,7 @@ export default function CardContainerMain() {
             cardTitle="Colores"
             cardDescription="El Verano nos dejo lleno de colores"
             buttonText="Productos"
+            linkProduct="/Category"
           />
         </Col>
       </Row>

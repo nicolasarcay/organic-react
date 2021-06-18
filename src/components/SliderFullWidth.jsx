@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ButtonPrincipal from "./buttons/ButtonPrincipal";
+import { Link } from "react-router-dom";
 
 export default function SliderFullWidth() {
   return (
@@ -21,7 +22,7 @@ export default function SliderFullWidth() {
             </p>
           </div>
           <div className="container-main-all-button">
-            <ButtonPrincipal callToAction="Comprar Ahora" />
+            <Link to="/Shop"><ButtonPrincipal callToAction="Comprar Ahora" /></Link>
           </div>
         </Col>
       </Row>

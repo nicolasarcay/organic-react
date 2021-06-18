@@ -18,14 +18,14 @@ function CardMercadolibre() {
         data.map((data, index) => {
           return (
             <Col lg={3} md={6} xs={12}>
-              <Card className="border-0 justify-content-center align-items-center">
+              <Card className="border-0 justify-content-center align-items-center h-100">
                 <Card.Img variant="top" src={data.image} alt={data.title} />
                 <Card.Body className="text-center">
                   <Card.Title>{data.title}</Card.Title>
                   <Card.Text>{data.description}</Card.Text>
                   <Card.Text className="d-flex flex-column">
                     <span className="font-weight-bold text-primary h4 mb-0">
-                      {data.price}
+                      $ {data.price}
                     </span>
                     <small className="text-muted">{data.category}</small>
                   </Card.Text>

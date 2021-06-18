@@ -13,7 +13,7 @@ export default function CardCategory(props) {
           <h3 className="text-uppercase font-weight-bold">{props.cardTitle}</h3>
           <p>{props.cardDescription}</p>
         </div>
-        <ButtonCards buttonTexts={props.buttonText} />
+        <ButtonCards buttonTexts={props.buttonText} linkProduct={props.linkProduct} />
       </Col>
     </div>
   );
