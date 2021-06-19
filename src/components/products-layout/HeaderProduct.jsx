@@ -4,6 +4,7 @@ import CounterCard from "../counters/CounterCard";
 import bgFrutillas from "../../img/frutillas-bg.jpg";
 
 function HeaderProduct() {
+
   return (
     <div>
       <div className="position-relative product">
@@ -11,7 +12,9 @@ function HeaderProduct() {
         <Container className="position-absolute product-texts">
           <Row className="align-items-center">
             <Col md={6}>
-              <h1 className="text-primary cursive font-weight-bold">Frutillas</h1>
+              <h1 className="text-primary cursive font-weight-bold">
+                Frutillas
+              </h1>
               <h3>Descripcion Corta</h3>
               <p className="d-flex flex-column">
                 <span className="font-weight-bold text-primary h4 mb-0">
@@ -22,9 +25,6 @@ function HeaderProduct() {
               <div className="d-flex justify-content-start m-0">
                 <CounterCard />
               </div>
-              <Button variant="primary" className="rounded-pill">
-                Comprar
-              </Button>
             </Col>
           </Row>
         </Container>

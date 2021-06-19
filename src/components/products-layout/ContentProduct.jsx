@@ -32,14 +32,16 @@ function ContentProduct() {
             </Row>
             <Row className="justify-content-center justify-content-md-start">
               <Router>
-                <Route
-                  path="/ProductDetail/Benefit"
-                  component={ProductBenefit}
-                ></Route>
-                <Route
-                  path="/ProductDetail/Nutricion"
-                  component={ProductNutricion}
-                ></Route>
+                <Switch>
+                  <Route
+                    path="/ProductDetail/Benefit"
+                    component={ProductBenefit}
+                  ></Route>
+                  <Route
+                    path="/ProductDetail/Nutricion"
+                    component={ProductNutricion}
+                  ></Route>
+                </Switch>
               </Router>
             </Row>
           </Col>

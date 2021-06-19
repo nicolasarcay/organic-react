@@ -21,7 +21,6 @@ export const CardProductMedium = () => {
                   </span>
                   <small className="text-muted">{item.leyenda}</small>
                 </Card.Text>
-                <CounterCard max={item.stock} />
                 <ButtonCards buttonTexts={item.boton} linkProduct={item.link} />
               </Card.Body>
             </Card>

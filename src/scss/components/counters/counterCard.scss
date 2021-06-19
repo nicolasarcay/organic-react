@@ -1,3 +1,11 @@
 .counter-card{
     font-size: 0.7rem;
 }
+.visible{
+    opacity: 1;
+    transition: all 300ms linear;
+}
+.invisible{
+    opacity: 0;
+    transition: all 300ms linear;
+}
