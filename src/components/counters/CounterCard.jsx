@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const MIN = 1;
+const MIN = 0;
 export default function CounterCard(props) {
   const [count, setCount] = useState(MIN);
   let increment = () => {
