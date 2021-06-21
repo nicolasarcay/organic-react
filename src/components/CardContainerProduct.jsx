@@ -1,16 +1,25 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
 import CardProductMedium from "./cards/CardProductMedium";
-import CardMercadolibre from './cards/CardMercadolibre'
+import productos from "../products.json";
 
-
-export default function SliderFullWidth() {
+export const CardContainerProduct = () => {
   return (
-    <Container>
-      <Row className="py-5 px-1">
-        <CardProductMedium />
-        <CardMercadolibre />
-      </Row>
-    </Container>
+    <>
+      {productos.map((item, index) => {
+        return (
+          <CardProductMedium
+            key={index}
+            imagen={item.imagen}
+            producto={item.producto}
+            descripcion={item.descripcion}
+            precio={item.precio}
+            leyenda={item.leyenda}
+            boton={item.boton}
+            link={item.link}
+          />
+        );
+      })}
+    </>
   );
-}
+};
+export default CardContainerProduct;

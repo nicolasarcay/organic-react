@@ -5,9 +5,10 @@
         "precio": "$ 350",
         "leyenda": "Precio por Kilo",
         "boton": "Ver Producto",
-        "link": "/ProductDetail/Benefit",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas.jpg",
-        "stock": 8
+        "stock": 8,
+        "link": "frutillas",
+        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas-bg.jpg"
     },
     {
         "producto": "Platanos",
@@ -15,9 +16,9 @@
         "precio": "$ 250",
         "leyenda": "Precio por Kilo",
         "boton": "Ver Producto",
-        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platano.jpg",
-        "stock": 20
+        "stock": 20,
+        "link": "platanos"
     },
     {
         "producto": "Naranjas",
@@ -25,9 +26,9 @@
         "precio": "$ 95",
         "leyenda": "Precio por Kilo",
         "boton": "Ver Producto",
-        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/naranjas.jpg",
-        "stock": 9
+        "stock": 9,
+        "link": "naranjas"
     },
     {
         "producto": "Uvas",
@@ -35,8 +36,8 @@
         "precio": "$ 150",
         "leyenda": "Precio por Kilo",
         "boton": "Ver Producto",
-        "link": "/ProductDetail",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/uvas.jpg",
-        "stock": 15
+        "stock": 15,
+        "link": "uvas"
     }
   ]
