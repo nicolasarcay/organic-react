@@ -2,21 +2,21 @@
     max-height: 100vh;
     overflow: hidden;
     &-texts{
-        bottom: 150px;
+        bottom: 80px;
         left: 60px;
-        @media (max-width: 650px) {
+        @media (min-width: 576px) {
             bottom: 10px;
             left: 50px;
         }
         @media (min-width: 768px){
-            bottom: 360px;
+            bottom: 300px;
             left: 260px;
         }
-        @media (max-width: 1450px) { 
-            bottom: 250px;
+        @media (min-width: 1200px) { 
+            bottom: 320px;
          }
         @media (min-width: 1450px) { 
-            bottom: 200px;
+            bottom: 180px;
          }
         h1 {
             font-size: 4rem;

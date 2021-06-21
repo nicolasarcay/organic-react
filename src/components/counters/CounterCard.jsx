@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 const MIN = 0;
-const MAX = 10;
 export default function CounterCard(props) {
   const [count, setCount] = useState(MIN);
   const increment = () => {
     let result = count + 1;
-    if (result <= MAX) {
+    if (result <= props.max) {
       setCount(count + 1);
     }
   };

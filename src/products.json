@@ -8,7 +8,7 @@
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas.jpg",
         "stock": 8,
         "link": "frutillas",
-        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas-bg.jpg"
+        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/frutillas-bg.jpg.webp"
     },
     {
         "producto": "Platanos",
@@ -16,9 +16,10 @@
         "precio": "$ 250",
         "leyenda": "Precio por Kilo",
         "boton": "Ver Producto",
-        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platano.jpg",
+        "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platano-1.jpg.webp",
         "stock": 20,
-        "link": "platanos"
+        "link": "platanos",
+        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/platanos-bg.jpg.webp"
     },
     {
         "producto": "Naranjas",
@@ -28,7 +29,8 @@
         "boton": "Ver Producto",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/naranjas.jpg",
         "stock": 9,
-        "link": "naranjas"
+        "link": "naranjas",
+        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/naranjas-bg.jpg"
     },
     {
         "producto": "Uvas",
@@ -38,6 +40,7 @@
         "boton": "Ver Producto",
         "imagen": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/uvas.jpg",
         "stock": 15,
-        "link": "uvas"
+        "link": "uvas",
+        "bgProduct": "http://nicolasa26.sg-host.com/wp-content/uploads/2021/06/uvas-bg.jpg.webp"
     }
   ]
