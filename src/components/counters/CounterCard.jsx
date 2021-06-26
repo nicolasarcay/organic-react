@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import { UseCart } from "../../CartContext";
 
+const { AddToCart } = UseCart()
 const MIN = 0;
 export default function CounterCard(props) {
   const [count, setCount] = useState(MIN);
@@ -16,6 +18,7 @@ export default function CounterCard(props) {
       setCount(count - 1);
     }
   };
+
 
   return (
     <div>
@@ -35,7 +38,7 @@ export default function CounterCard(props) {
         </button>
       </div>
       <div className={count === 0 ? "invisible" : "visible"}>
-        <Button variant="primary" className="rounded-pill">
+        <Button variant="primary" className="rounded-pill" onClick={()=>{AddToCart()}}>
           Comprar
         </Button>
       </div>
