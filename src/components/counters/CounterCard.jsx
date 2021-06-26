@@ -4,21 +4,29 @@ import { UseCart } from "../../CartContext";
 
 const { AddToCart } = UseCart()
 const MIN = 0;
+
 export default function CounterCard(props) {
+  
   const [count, setCount] = useState(MIN);
+  
   const increment = () => {
     let result = count + 1;
     if (result <= props.max) {
       setCount(count + 1);
     }
   };
+  
   const decrement = () => {
     let result = count - 1;
     if (result >= MIN) {
       setCount(count - 1);
     }
   };
-
+  const productObj = {
+    "title": props.producto,
+    "price": props.precio,
+    "quanty": count
+  }
 
   return (
     <div>
@@ -38,7 +46,7 @@ export default function CounterCard(props) {
         </button>
       </div>
       <div className={count === 0 ? "invisible" : "visible"}>
-        <Button variant="primary" className="rounded-pill" onClick={()=>{AddToCart()}}>
+        <Button variant="primary" className="rounded-pill" onClick={()=>{AddToCart(productObj)}}>
           Comprar
         </Button>
       </div>

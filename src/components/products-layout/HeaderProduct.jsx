@@ -1,28 +1,28 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import CounterCard from "../counters/CounterCard";
 
-function HeaderProduct({bg, producto, precio, leyenda, descripcion, stock}) {
+function HeaderProduct({props}) {
 
   return (
     <div>
       <div className="position-relative product">
-        <img clasName="img-fluid" src={bg} alt={producto} />
+        <img clasName="img-fluid" src={props.bg} alt={props.producto} />
         <Container className="position-absolute product-texts">
           <Row className="align-items-center">
             <Col md={6}>
               <h1 className="text-primary cursive font-weight-bold">
-                {producto}
+                {props.producto}
               </h1>
-              <h3>{descripcion}</h3>
+              <h3>{props.descripcion}</h3>
               <p className="d-flex flex-column">
                 <span className="font-weight-bold text-primary h4 mb-0">
-                  {precio}
+                  {props.precio}
                 </span>
-                <small className="text-muted">{leyenda}</small>
+                <small className="text-muted">{props.leyenda}</small>
               </p>
               <div className="d-flex justify-content-start m-0">
-                <CounterCard max={stock}/>
+                <CounterCard allData={props}/>
               </div>
             </Col>
           </Row>
