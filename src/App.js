@@ -1,12 +1,13 @@
-import './App.scss';
-import AppRouter from './routers/AppRouter'
-
-
+import "./App.scss";
+import AppRouter from "./routers/AppRouter";
+import { CartProvider } from "./CartContext";
 
 function App() {
   return (
     <div className="App">
-      <AppRouter/>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
     </div>
   );
 }

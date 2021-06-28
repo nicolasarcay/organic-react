@@ -9,6 +9,7 @@ export const CardContainerProduct = () => {
         return (
           <CardProductMedium
             key={index}
+            id={item.id}
             imagen={item.imagen}
             producto={item.producto}
             descripcion={item.descripcion}

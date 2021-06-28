@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CounterCard from "../counters/CounterCard";
 
-function HeaderProduct({props}) {
+function HeaderProduct(props) {
 
   return (
     <div>
       <div className="position-relative product">
-        <img clasName="img-fluid" src={props.bg} alt={props.producto} />
+        <img className="img-fluid" src={props.bg} alt={props.producto} />
         <Container className="position-absolute product-texts">
           <Row className="align-items-center">
             <Col md={6}>
@@ -17,7 +17,7 @@ function HeaderProduct({props}) {
               <h3>{props.descripcion}</h3>
               <p className="d-flex flex-column">
                 <span className="font-weight-bold text-primary h4 mb-0">
-                  {props.precio}
+                  $ {props.precio}
                 </span>
                 <small className="text-muted">{props.leyenda}</small>
               </p>

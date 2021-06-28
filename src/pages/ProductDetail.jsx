@@ -18,7 +18,7 @@ const ProductDetail = () => {
     console.log(datos)
     return (
         <div>
-            <HeaderProduct bg={datos[0].bgProduct} producto={datos[0].producto} descripcion={datos[0].descripcion} precio={datos[0].precio} leyenda={datos[0].leyenda} stock={datos[0].stock} />
+            <HeaderProduct bg={datos[0].bgProduct} id={datos[0].id} producto={datos[0].producto} descripcion={datos[0].descripcion} precio={datos[0].precio} leyenda={datos[0].leyenda} stock={datos[0].stock} />
             <ContentProduct/>
             <RelatedProduct/>
         </div>

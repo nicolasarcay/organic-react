@@ -3,7 +3,7 @@ import { Card, Col } from "react-bootstrap";
 import ButtonCards from "../buttons/ButtonCards";
 import { Link } from 'react-router-dom';
 
-function CardProductMedium({imagen, producto, descripcion, precio, leyenda, boton, link}) {
+function CardProductMedium({imagen, producto, descripcion, precio, leyenda, boton, link, id}) {
   return (
       <Col lg={3} md={6} xs={12}>
             <Card className="border-0 justify-content-center align-items-center">
@@ -15,7 +15,7 @@ function CardProductMedium({imagen, producto, descripcion, precio, leyenda, boto
                 <Card.Text>{descripcion}</Card.Text>
                 <Card.Text className="d-flex flex-column">
                   <span className="font-weight-bold text-primary h4 mb-0">
-                    {precio}
+                    $ {precio}
                   </span>
                   <small className="text-muted">{leyenda}</small>
                 </Card.Text>

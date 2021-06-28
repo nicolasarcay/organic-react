@@ -33,7 +33,7 @@ export default function NavBar() {
         >
           <Col xs={8}>
             <IndexLinkContainer to="/">
-              <Navbar.Brand href="#home" className="pl-lg-5">
+              <Navbar.Brand className="pl-lg-5">
                 <img src={logo} className="img-fluid" alt="Logo" />
               </Navbar.Brand>
             </IndexLinkContainer>

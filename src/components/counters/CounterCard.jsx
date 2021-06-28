@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { UseCart } from "../../CartContext";
 
-const { AddToCart } = UseCart()
 const MIN = 0;
 
-export default function CounterCard(props) {
+export default function CounterCard({ allData }) {
+
+  const { AddToCart } = UseCart()
   
   const [count, setCount] = useState(MIN);
   
   const increment = () => {
     let result = count + 1;
-    if (result <= props.max) {
+    if (result <= allData.stock) {
       setCount(count + 1);
     }
   };
@@ -23,9 +24,11 @@ export default function CounterCard(props) {
     }
   };
   const productObj = {
-    "title": props.producto,
-    "price": props.precio,
-    "quanty": count
+    "id": allData.id,
+    "title": allData.producto,
+    "price": allData.precio,
+    "quanty": count,
+    "total": count*allData.precio
   }
 
   return (
