@@ -63,7 +63,6 @@ function CardContainerCart() {
             <p>$ {total}</p>
           </Col>
         </Row>
-        {console.log(cart)}
       </Container>
     );
   }
