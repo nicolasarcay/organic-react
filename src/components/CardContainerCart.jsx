@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardCartItem from "./cards/CardCartItem";
-import { UseCart } from "../CartContext";
+import { UseCart } from "../provider/CartContext";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import CardContainerProduct from "./CardContainerProduct";
 import ButtonPrincipal from "./buttons/ButtonPrincipal";

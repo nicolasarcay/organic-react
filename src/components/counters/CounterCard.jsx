@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { UseCart } from "../../CartContext";
+import { UseCart } from "../../provider/CartContext";
 
 const MIN = 0;
 

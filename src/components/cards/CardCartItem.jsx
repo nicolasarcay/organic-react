@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
-import { UseCart } from "../../CartContext";
+import { UseCart } from "../../provider/CartContext";
 
 function CardCartItem({ producto, precio, cantidad, total, id }) {
   const { removeFromCart } = UseCart()

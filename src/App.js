@@ -1,6 +1,6 @@
 import "./App.scss";
 import AppRouter from "./routers/AppRouter";
-import { CartProvider } from "./CartContext";
+import { CartProvider } from "./provider/CartContext";
 
 function App() {
   return (

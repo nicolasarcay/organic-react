@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
   function removeFromCart(obj) {
     
     let removeItem = cart.filter(function(objeto){ 
-      return objeto.id != obj.id; 
+      return objeto.id !== obj.id; 
   });
     setCart(removeItem);
   }

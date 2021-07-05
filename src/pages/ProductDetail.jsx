@@ -1,42 +1,37 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
-import products from "../products.json";
+import { getFirestore } from "../firebase/HelperFirebase";
+import 'firebase/firestore';
 import HeaderProduct from "../components/products-layout/HeaderProduct";
 import ContentProduct from "../components/products-layout/ContentProduct";
 import CardContainerProduct from "../components/CardContainerProduct";
 import { Container, Row, Col } from "react-bootstrap";
 
 const ProductDetail = () => {
-  const { link } = useParams();
-  const datos = [];
-  products.forEach((item) => {
-    if (item.link.includes(link)) {
-      datos.push(item);
-    }
-  });
-  console.log(datos);
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    const db = getFirestore();
+  
+    const itemColection = db.collection("items");
+
+    itemColection.get().then((querySnapshot) => {
+      if (querySnapshot.size === 0 ) {
+        console.log('no hay resultados!')
+      }
+      setItems (querySnapshot.docs.map(doc => doc.data()));
+    }).catch((error) => {
+      console.log("error buscando archivos", error);
+    }).finally(() => {
+      setLoading(false);
+    });
+  }, [])
+
   return (
     <div>
-      <HeaderProduct
-        bg={datos[0].bgProduct}
-        id={datos[0].id}
-        producto={datos[0].producto}
-        descripcion={datos[0].descripcion}
-        precio={datos[0].precio}
-        leyenda={datos[0].leyenda}
-        stock={datos[0].stock}
-      />
-      <ContentProduct img={datos[0].imagen} title={datos[0].producto} />
-      <Container>
-        <Row>
-          <Col>
-            <h3 className="cursive text-primary">Productos Relacionados</h3>
-          </Col>
-        </Row>
-        <Row className="py-5 px-1">
-          <CardContainerProduct />
-        </Row>
-      </Container>
+      {console.log(items)}
     </div>
   );
 };
