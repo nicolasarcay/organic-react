@@ -19,8 +19,7 @@ function AppRouter() {
         <Route path="/Sales" component={Sales}></Route>
         <Route path="/Category" component={Category}></Route>
         <Route path="/Cart" component={Cart}></Route>
-        <Route path="/ProductDetail" component={ProductDetail}></Route>
-        <Route path="/:link" component={ProductDetail}></Route>
+        <Route path="/ProductDetail/:link" component={ProductDetail}></Route>
       </Switch>
     </Router>
   );
